@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+@font-face {
+    font-family: arial;
+    src: url('../fonts/arial-Regular.otf');
+}
+
+.main {
+    padding: 0 !important;
+    font-family: arial;
+}
+
+.brand-logo {
+    display: flex;
+    padding: 30px 0;
+    border-bottom: 5px solid red;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.brand-logo img {
+    width: auto;
+}
+
+.content-wrap {
+    height: 80vh;
+    /* background: linear-gradient(#015088 0%, #015088 50%, #fff 50%, #fff 100%) */
+}
+
+.content-wrap:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 248px;
+    background: #015088;
+}
+
+.content-white-bg.hide {
+    display: none;
+}
+
+.content-wrap .content-white-bg {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000029;
+    opacity: 1;
+    position: relative;
+    z-index: 99;
+    padding: 55px 10px;
+}
+
+.pad-wrap {
+    padding: 60px 15px 60px 15px;
+}
+
+.inputDiv {
+    margin-bottom: 45px;
+}
+
+input[type="text"] {
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.5px solid #707070ad;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 9px 10px;
+    font-size: 14px;
+}
+
+input[type="text"]::placeholder {
+    color: #00000047;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+}
+
+input[type="password"] {
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.5px solid #707070ad;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 3.5px 10px;
+}
+
+.captchaDiv {
+    background: #FFFFFF;
+    box-shadow: inset 0px 2px 11px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+#captcha {
+    color: #333;
+    z-index: 99;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.captcha.divwrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+}
+
+.imgs.text-end {
+    margin-bottom: 35px;
+}
+
+.imgs img {
+    width: 22px;
+    margin: 10px 0 10px 15px;
+}
+
+.imgs img:nth-child(2) {
+    width: 25px;
+}
+
+button.submit-btn {
+    border: 1px solid #B11216;
+    background: #B11216;
+    border-radius: 20px;
+    width: 100%;
+    color: #fff;
+    padding: 6.5px 0;
+    font: normal normal normal 16px/26px Arial;
+    letter-spacing: 0.48px;
+    opacity: 1;
+    margin-bottom: 45px;
+}
+
+
+/* Second screen css 
+--------------------------*/
+
+.textSection {
+    padding: 15px 10px;
+    margin-bottom: 45px;
+}
+
+.textSection p span {
+    font-weight: 600;
+}
+
+.textSection>p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.7;
+}
+
+p.or_cls {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 21px;
+}
+
+.page2 button.submit-btn {
+    margin-bottom: 21px;
+}
+
+button.submit-btn.white_bg {
+    border: 1px solid #B11216;
+    background: transparent;
+    color: #B11216;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.page2 .btnDiv:nth-child(4) button.submit-btn {
+    margin-bottom: 100px;
+}
+
+
+/* Third & Forth screen css
+---------------------*/
+
+.content-wrap .imgSection,
+.content-wrap .imgSection {
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.content-wrap.thankyou .imgSection img,
+.content-wrap.invalid_sec .imgSection img {
+    width: 77px;
+}
+
+.content-wrap.thankyou .textSection,
+.content-wrap.invalid_sec .textSection {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.content-wrap.thankyou .textSection h2 {
+    text-transform: uppercase;
+}
+
+.content-wrap.thankyou .textSection h2,
+.content-wrap.invalid_sec .textSection h2 {
+    color: #0072BA;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.content-wrap.invalid_sec .textSection h2 {
+    font-size: 24px;
+    color: #015088;
+}
+
+.content-wrap.thankyou .textSection h2 span {
+    color: #D21144;
+}
+
+.content-wrap.thankyou .textSection>p {
+    font-weight: bold;
+    color: #263238;
+}
+
+.content-wrap.page4 .content-white-bg {
+    padding: 120px 0px;
+}
+
+
+/* Fifth screen css
+---------------------*/
+
+.content-wrap.page5 img {
+    width: 214px;
+}
+
+.content-wrap.page5 input[type="password"] {
+    font-size: 21px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="password"]::placeholder {
+    color: #00000047;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 24px; */
+}
+
+input[type="password"]:focus-visible {
+    outline: none;
+}
+
+.content-wrap.page5 .textSection {
+    margin-bottom: 0px;
+}
+
+.content-wrap.page5 .textSection>p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #015088;
+}
+
+.btnDiv {
+    text-align: center;
+}
+
+.content-wrap.page5 button.submit-btn {
+    margin-bottom: 18px;
+    width: 90%;
+}
+
+.inputDiv.incorrect_otp input[type="password"] {
+    border: 0.5px solid #D21144;
+}
+
+label.incorrect_otp.text-end {
+    color: #B11216;
+    display: block;
+}
+
+
+/*  7th & 8th screen css
+-----------------------*/
+
+.content-wrap.page7 .content-white-bg {
+    padding: 35px 0px;
+}
+
+.content-wrap.page7 .infoBox {
+    border-bottom: 0.5px solid #00000029;
+}
+
+.content-wrap.page7 .infoBox .content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.infoBox .img {
+    margin-right: 18px;
+}
+
+.infoBox .img img {
+    width: 58px;
+}
+
+.infoBox p {
+    color: #015088;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.content-wrap.page7 .textSection {
+    margin-bottom: 5px;
+    padding: 15px 18px;
+}
+
+.content-wrap.page7 .textSection>p {
+    color: #263238;
+    font-family: arial;
+}
+
+.content-wrap.page7 .checkbox_sec label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #263238;
+}
+
+.content-wrap.page7 button.submit-btn {
+    margin-bottom: 15px;
+}
+
+.content-wrap.page8 .textSection {
+    margin-bottom: 35px;
+}
+
+.content-wrap.page8 .btnDiv button.submit-btn {
+    width: 94%;
+}
+
+.content-wrap.page7 .checkbox_sec {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox_sec label {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.checkbox_sec label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #015088;
+    border-radius: 2px;
+}
+
+.checkbox_sec label:hover input~.checkmark {
+    background-color: #fff;
+    border: 2px solid #015088;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.checkbox_sec label input:checked~.checkmark {
+    background-color: #015088;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.checkbox_sec label input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.checkbox_sec label .checkmark:after {
+    left: 6.5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox_sec label:hover input~.checkmark:focus-visible {
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+
+/*-----------*/
+
+.content-wrap.page9 .inputDiv:nth-child(1) {
+    margin-bottom: 18px;
+}
+
+.content-wrap.page9 .inputDiv:nth-child(2) {
+    margin-bottom: 63px;
+}
+
+.content-wrap.page9 input[type="password"] {
+    padding: 7.5px 10px;
+}
+
+.content-wrap.page9 button.submit-btn {
+    margin-bottom: 0;
+}
+
+
+/*----------------*/
+
+.content-wrap.page10 .textSection h2 {
+    line-height: 1.6;
+}
+
+.content-wrap.page10 .textSection {
+    margin-bottom: 48px;
+}
+
+.page10 .btnDiv:nth-child(3) button.submit-btn {
+    margin-bottom: 18px;
+}
+
+.page10 .btnDiv:nth-child(4) button.submit-btn {
+    margin-bottom: 5px;
+}
+
+
+/* --------  Media Screens 
+------------------------*/
+
+@media screen and (max-width:768px) {
+    .brand-logo img {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .content-wrap .content-white-bg {
+        padding: 55px 0px;
+    }
+    .textSection {
+        padding: 15px 6px;
+    }
+    .content-wrap.page3 .textSection>p {
+        font-size: 15px;
+    }
+}
